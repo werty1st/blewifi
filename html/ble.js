@@ -40,8 +40,8 @@ function onStartButtonClick() {
     var decodedString = decoder.decode(value);
 
     var wlist = document.getElementById("wifis");
-    for (var i; i<wlist.options.length;i++){
-      wlist.options.remove(i);
+    for (var i=0; i < wlist.options.length; i++){
+      wlist.options.remove(0);
     }
 
     var remoteWifis = JSON.parse(decodedString);

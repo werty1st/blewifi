@@ -1,6 +1,7 @@
 //sudo setcap cap_net_raw+eip $(eval readlink -f $(which node))
 //        hci0    DC:A6:32:02:48:35
 // apt install libdbus-1-dev
+// python3 -m http.server 8888 --bind 127.0.0.1
 
 var bleno = require('@abandonware/bleno');
 var WifiSevice = require('./wifi-service');
