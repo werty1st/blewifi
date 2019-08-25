@@ -40,7 +40,7 @@ function onStartButtonClick() {
     var decodedString = decoder.decode(value);
 
     var wlist = document.getElementById("wifis");
-    for (var i=0; i < wlist.options.length; i++){
+    for (var i=wlist.options.length; i>0; i--){
       wlist.options.remove(0);
     }
 

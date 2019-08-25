@@ -47,8 +47,11 @@ WifiCharacteristic.prototype.onWriteRequest = function(data, offset, withoutResp
 
   wifi.networks.map( network => {
     if (network.ssid == ssid){
+      network.add({psk}, (err)=>{
+        console.log("add Network:", ssid, err);
+      });
       network.connect({psk}, (err)=>{
-        console.log("connected to", ssid, err);
+        console.log("connected to:", ssid, err);
       });
     }
   })
