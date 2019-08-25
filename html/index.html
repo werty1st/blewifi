@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="ble.js">
+    </script>
+    <title>Web Bluetooth</title>
+    <!-- python -m SimpleHTTPServer 8888 -->
+  </head>
+  <body>
+    <button onClick='onStartButtonClick()'>Scan Networks</button>
+    <button onClick='onStopButtonClick()'>disconnect</button>
+
+
+    <SELECT id="wifis">
+    </SELECT>
+
+    <input type="password" id="psk">
+
+    <button onClick='onConnect()'>Connect</button>
+
+
+  </body>
+</html>
